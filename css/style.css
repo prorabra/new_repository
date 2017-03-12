@@ -38,9 +38,18 @@ body {
   max-width: 1920px;
   margin: 0 auto; }
 
+.chair {
+  background-image: url("../images/chair.jpg");
+  height: 60px;
+  width: 354px;
+  background-repeat: no-repeat;
+  float: left; }
+
 .call-back {
   float: right;
   margin-top: 8px; }
+  .call-back > a {
+    text-decoration: none; }
 
 .call-back_phone {
   text-decoration: none;
@@ -87,7 +96,9 @@ body {
   height: 245px;
   margin: 65px auto;
   padding: 40px 30px;
-  position: relative; }
+  position: relative;
+  outline: 9999px solid rgba(50, 50, 49, 0.9);
+  z-index: 1; }
   .thanks_1 {
     font-size: 38px;
     color: white;
@@ -117,12 +128,14 @@ body {
     right: -25px;
     top: -25px;
     display: block; }
-    .thanks_cross > a:before {
-      color: #ec2026;
-      /* Цвет маркера */
-      content: "\2716";
-      /* Сам маркер */
-      font-size: 20px; }
+    .thanks_cross > a {
+      text-decoration: none; }
+      .thanks_cross > a:before {
+        color: #ec2026;
+        /* Цвет маркера */
+        content: "\2716";
+        /* Сам маркер */
+        font-size: 20px; }
 
 .form {
   display: none;
@@ -130,7 +143,7 @@ body {
   background: rgba(1, 1, 1, 0.9);
   width: 445px;
   height: 440px;
-  margin: 40px auto;
+  margin: 40px auto 0px auto;
   padding: 40px 30px;
   position: relative; }
   .form_head {
@@ -186,9 +199,9 @@ body {
 
 .box1 {
   background-image: url("../images/room.jpg");
-  height: 760px;
   padding-top: 25px;
-  margin-top: 25px; }
+  margin-top: 25px;
+  padding-bottom: 25px; }
 
 .red_line {
   background-image: url("../images/red_line.png");
@@ -214,18 +227,20 @@ body {
 .circle {
   height: 256px;
   width: 256px;
-  -webkit-border-radius: 256px;
-  -moz-border-radius: 256px;
-  border-radius: 256px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
   background-image: url("../images/sofa_in_circle.jpg");
   margin: 0 auto;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
 
 .sector {
   background-image: url("../images/sector.png");
   height: 135px;
   background-repeat: no-repeat;
-  position: relative;
+  position: absolute;
+  width: 100%;
   top: -4px;
   left: 147px; }
   .sector_2 {
@@ -245,9 +260,12 @@ body {
 
 .brace {
   background-image: url("../images/brace.png");
-  height: 25px;
+  height: 35px;
   background-repeat: no-repeat;
   background-position: center center;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   margin-top: 25px;
   margin-bottom: 35px; }
 
