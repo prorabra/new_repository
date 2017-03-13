@@ -17,6 +17,9 @@ body {
   width: 100%;
   clear: both; }
 
+.font-family {
+  font-family: 'Open Sans', sans-serif; }
+
 .advantages
 .wrapper {
   max-width: 1000px;
@@ -26,7 +29,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   font-size: 61px;
-  font-family: "OpenSans"; }
+  font-family: 'Open Sans', sans-serif; }
 
 .line {
   background-image: url("../img/line.png");
@@ -41,7 +44,7 @@ body {
 
 .contentb {
   font-size: 18px;
-  font-family: "OpenSans";
+  font-family: 'Open Sans', sans-serif;
   padding-top: 35px;
   display: block;
   float: left;
@@ -50,12 +53,20 @@ body {
 
 .textb {
   font-size: 29px;
-  font-family: "OpenSans";
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   padding-top: 110px;
   display: block;
   float: left;
   text-align: right; }
+
+.shadowb {
+  background-image: url("../img/elipsb.png");
+  height: 360px;
+  width: 360px;
+  float: right;
+  position: relative;
+  margin-top: -122px; }
 
 .imgfactory {
   background-image: url("../img/imgfactory.jpg");
@@ -64,32 +75,32 @@ body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
-  margin-top: 40px;
-  margin-left: 14px; }
-
-.shadowb {
-  background-image: url("../img/elipsb.png");
-  height: 360px;
-  width: 360px;
-  float: right;
-  margin-top: -122px; }
+  position: absolute;
+  margin-left: 20px;
+  margin-bottom: 35px;
+  bottom: 0; }
 
 .redb {
   background-image: url("../img/redb.png");
   height: 140px;
   width: 140px;
-  margin-top: -125px; }
+  position: absolute;
+  left: 0;
+  margin-left: -25px;
+  bottom: 0; }
 
 .factory {
   background-image: url("../img/factory.png");
   width: 53px;
   height: 60px;
-  margin-top: -95px;
-  margin-left: 40px; }
+  position: absolute;
+  margin-bottom: 37px;
+  margin-left: 40px;
+  bottom: 0; }
 
 .textr {
   font-size: 29px;
-  font-family: "OpenSans";
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   padding-top: 70px;
   display: block;
@@ -97,7 +108,7 @@ body {
 
 .contentr {
   font-size: 18px;
-  font-family: "OpenSans";
+  font-family: 'Open Sans', sans-serif;
   padding-top: 35px;
   display: block;
   float: left;
@@ -111,7 +122,8 @@ body {
   padding-left: 36px;
   padding-top: 27px;
   margin-top: 16px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  position: relative; }
 
 .imgcop {
   background-image: url("../img/cop.jpg");
@@ -119,21 +131,28 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .redl {
   background-image: url("../img/red.png");
   height: 108px;
   width: 108px;
-  margin-top: -96px;
-  margin-left: 145px; }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: -18px; }
 
 .cop {
   background-image: url("../img/cop.png");
   width: 53px;
   height: 60px;
-  margin-top: -87px;
-  margin-left: 167px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  margin-left: 20px; }
 
 .col-d-3x-r {
   width: 70%;
@@ -149,7 +168,7 @@ body {
 
 .textl {
   font-size: 29px;
-  font-family: "OpenSans";
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   padding-top: 70px;
   display: block;
@@ -158,7 +177,7 @@ body {
 
 .contentl {
   font-size: 18px;
-  font-family: "OpenSans";
+  font-family: 'Open Sans', sans-serif;
   padding-top: 35px;
   display: block;
   float: left;
@@ -173,7 +192,8 @@ body {
   padding-left: 16px;
   padding-top: 27px;
   margin-top: 16px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  position: relative; }
 
 .imgdocuments {
   background-image: url("../img/documents.jpg");
@@ -181,21 +201,27 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .redr {
   background-image: url("../img/red.png");
   height: 108px;
   width: 108px;
-  margin-top: -96px;
-  margin-left: -15px; }
+  position: absolute;
+  bottom: 0;
+  margin-left: -18px; }
 
 .copstop {
   background-image: url("../img/copstop.png");
   width: 53px;
   height: 60px;
-  margin-top: -85px;
-  margin-left: 5px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  margin-left: 20px; }
 
 .imgarms {
   background-image: url("../img/arms.jpg");
@@ -203,14 +229,19 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .file {
   background-image: url("../img/file.png");
   width: 53px;
   height: 60px;
-  margin-top: -82px;
-  margin-left: 176px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  margin-left: 30px; }
 
 .apartment {
   height: 330px;
@@ -222,14 +253,19 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .sale30 {
   background-image: url("../img/sale30.png");
   width: 53px;
   height: 60px;
-  margin-top: -85px;
-  margin-left: 5px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 22px;
+  margin-left: 22px; }
 
 .imgfeast {
   background-image: url("../img/feast.jpg");
@@ -237,14 +273,19 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .eat {
   background-image: url("../img/eat.png");
   width: 55px;
   height: 60px;
-  margin-top: -85px;
-  margin-left: 168px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  margin-left: 23px; }
 
 .speak {
   height: 330px;
@@ -256,14 +297,19 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .chat {
   background-image: url("../img/chat.png");
   width: 53px;
   height: 60px;
-  margin-top: -83px;
-  margin-left: 7px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 21px;
+  margin-left: 21px; }
 
 .imgcalc {
   background-image: url("../img/calc.jpg");
@@ -271,14 +317,19 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .opt {
   background-image: url("../img/opt.png");
   width: 55px;
   height: 60px;
-  margin-top: -83px;
-  margin-left: 170px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px;
+  margin-left: 24px; }
 
 .carry {
   height: 330px;
@@ -290,14 +341,19 @@ body {
   height: 230px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 25px; }
 
 .plane {
   background-image: url("../img/plane.png");
   width: 53px;
   height: 60px;
-  margin-top: -83px;
-  margin-left: 7px; }
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 23px;
+  margin-left: 20px; }
 
 .bgform {
   background-image: url("../img/bg.jpg");
@@ -311,14 +367,19 @@ body {
 
 .bonus {
   font-size: 37px;
-  font-family: "OpenSans";
-  color: white; }
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 40px; }
 
 .available {
   font-size: 20px;
-  font-family: "OpenSans";
+  font-family: 'Open Sans', sans-serif;
   color: white;
-  display: inline-block; }
+  display: inline-block;
+  border-right: 4px solid red;
+  width: 555px; }
 
 .available > ul {
   list-style-type: none;
@@ -330,31 +391,27 @@ body {
   padding-right: 20px;
   vertical-align: text-bottom; }
 
-.red-line {
-  height: 250px;
-  width: 4px;
-  background-color: red;
-  display: inline-block; }
-
-.button {
-  margin-top: 30px;
-  font-size: 19px;
-  color: white;
-  font-family: "OpenSans";
-  background-color: red;
-  padding: 25px 20px;
-  display: inline-block; }
-
 .forms {
   float: right;
   padding-right: 30px; }
 
-.forms > ul {
-  list-style-type: none; }
-
-.forms > ul > li {
-  margin-top: 15px; }
-
-.forms > ul > li > input {
+.forms > input {
+  margin-top: 15px;
   width: 372px;
-  height: 37px; }
+  height: 37px;
+  outline: none;
+  border: none; }
+  .forms > input:focus {
+    outline: none;
+    border: 1px solid red; }
+
+.forms > a {
+  text-decoration: none;
+  margin-top: 30px;
+  font-size: 19px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  background-color: red;
+  padding: 14px 26px;
+  display: inline-block;
+  border: none; }
