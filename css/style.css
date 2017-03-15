@@ -94,9 +94,15 @@ body {
   background: rgba(1, 1, 1, 0.9);
   width: 445px;
   height: 245px;
-  margin: 65px auto;
   padding: 40px 30px;
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   outline: 9999px solid rgba(50, 50, 49, 0.9);
   z-index: 1; }
   .thanks_1 {
