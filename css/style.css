@@ -177,7 +177,15 @@ body {
   height: 35px;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 16px; }
+  font-size: 16px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  outline: none;
+  border: none; }
+  .contact_form > ul > li > input:focus {
+    outline: none;
+    border: 1px solid red; }
 
 .contact_form > ul > li > button {
   font-size: 18px;
@@ -201,7 +209,8 @@ body {
   background-image: url("../images/room.jpg");
   padding-top: 25px;
   margin-top: 25px;
-  padding-bottom: 25px; }
+  padding-bottom: 25px;
+  background-attachment: fixed; }
 
 .red_line {
   background-image: url("../images/red_line.png");
@@ -214,15 +223,15 @@ body {
 .box2 {
   background-image: url("../images/city.png");
   background-repeat: no-repeat;
-  height: 760px;
   padding-top: 25px;
-  margin-top: 25px; }
+  background-attachment: fixed; }
 
 .main-text_why {
   text-align: center;
   color: #333333;
   font-size: 61px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: 20px; }
 
 .circle {
   height: 256px;
