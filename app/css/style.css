@@ -1,0 +1,364 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  min-height: 100%; }
+
+body {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  line-height: 1.148; }
+
+@media (max-width: 64em) {
+  .mobileonly {
+    display: block;
+    font-size: 12px; }
+    .mobileonly .city {
+      background-image: none; }
+    .mobileonly .input {
+      background-image: none; }
+      .mobileonly .input_header {
+        color: #f00; }
+      .mobileonly .input_subheader {
+        color: #f00;
+        margin-bottom: 20px; }
+      .mobileonly .input_bg {
+        padding: 40px 120px; }
+        .mobileonly .input_bg input {
+          padding-left: 5px;
+          width: 100%; }
+    .mobileonly .case {
+      background-image: none; }
+      .mobileonly .case .postcard_response {
+        margin-top: 10px; }
+        .mobileonly .case .postcard_response_pic {
+          float: left; }
+        .mobileonly .case .postcard_response_text {
+          padding-left: 100px; }
+        .mobileonly .case .postcard_response_name {
+          padding-left: 100px; }
+    .mobileonly .sert {
+      width: 100%;
+      padding-top: 10px;
+      text-align: center; }
+    .mobileonly .wraper {
+      padding-left: 5px;
+      padding-right: 5px; }
+    .mobileonly .block_header h2 {
+      font-size: 24px; }
+    .mobileonly .benefit {
+      text-align: center; }
+      .mobileonly .benefit_pic {
+        margin-left: auto;
+        margin-right: auto; } }
+
+@media (min-width: 37.5em) and (max-width: 64em) {
+  .tablet {
+    display: block;
+    font-size: 25px; }
+    .tablet .wraper {
+      padding-left: 35px;
+      padding-right: 35px; }
+    .tablet .block_header {
+      margin-bottom: 30px; }
+      .tablet .block_header h2 {
+        font-size: 35px;
+        margin-bottom: 5px;
+        padding-top: 50px; }
+    .tablet .postcard {
+      text-align: center; }
+      .tablet .postcard_text {
+        text-align: left; }
+      .tablet .postcard_response {
+        text-align: left; } }
+
+@media (min-width: 64em) {
+  .desktop {
+    display: block; }
+    .desktop .input {
+      padding-bottom: 80px; }
+      .desktop .input_subheader {
+        font-size: 37px; }
+      .desktop .input_bg {
+        padding-left: 35px;
+        padding-right: 35px;
+        margin-left: 20%;
+        margin-right: 20%; }
+      .desktop .input_form {
+        margin-top: 70px;
+        padding-top: 50px; }
+        .desktop .input_form input {
+          width: 100%; }
+    .desktop .wraper .sliderarrows:nth-child(1) {
+      float: left;
+      left: 0;
+      margin-left: 0; }
+    .desktop .city {
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      background-position-y: -260px;
+      background-repeat: no-repeat; }
+      .desktop .city_text {
+        margin-left: 125px;
+        line-height: 1.6;
+        margin-top: 60px;
+        margin-bottom: 100px; }
+    .desktop .sert {
+      float: left;
+      margin-right: 30px;
+      margin-left: 30px;
+      max-width: 100%; }
+    .desktop .case .sliderarrows {
+      top: -115px; }
+    .desktop .case .postcard {
+      margin-bottom: 135px; }
+      .desktop .case .postcard_pic {
+        float: left;
+        width: 500px;
+        margin-right: 40px; }
+      .desktop .case .postcard_text {
+        line-height: 1.6; }
+      .desktop .case .postcard_response_text {
+        line-height: 1.6; }
+    .desktop .col-3x {
+      width: 33.33%;
+      float: left;
+      margin-bottom: 75px; }
+    .desktop .wraper {
+      padding-left: 24%;
+      padding-right: 24%; }
+    .desktop .text {
+      padding-right: 45px;
+      padding-left: 45px; }
+    .desktop .benefit {
+      text-align: center; }
+      .desktop .benefit_pic {
+        margin: 0 auto;
+        max-width: 100%;
+        max-height: 100%; }
+        .desktop .benefit_pic img {
+          max-width: 100%; } }
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both; }
+
+.block_header {
+  text-align: center;
+  margin-bottom: 50px; }
+  .block_header h2 {
+    text-transform: uppercase;
+    color: #333333;
+    font-size: 61px;
+    margin-bottom: 20px;
+    padding-top: 80px; }
+  .block_header .red-line {
+    background-image: url("../images/red_line.png");
+    background-repeat: no-repeat;
+    height: 15px;
+    background-position: center; }
+
+.text {
+  color: #333333;
+  text-align: center;
+  margin-bottom: 45px; }
+
+.benefit {
+  margin-bottom: 75px;
+  margin: 0 10px; }
+  .benefit_pic {
+    width: 260px;
+    -webkit-border-radius: 260px;
+    -moz-border-radius: 260px;
+    border-radius: 260px;
+    background-color: #f2f2f2;
+    padding-top: 19px;
+    padding-left: 33px; }
+  .benefit_text {
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-size: 23px; }
+    .benefit_text_subtext {
+      font-size: 17px; }
+
+.case {
+  background-image: url("../images/casefon.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .case .postcard {
+    background-color: white;
+    padding: 10px 10px; }
+    .case .postcard_pic {
+      max-width: 100%; }
+    .case .postcard_text {
+      margin-top: 30px;
+      margin-right: 20px; }
+    .case .postcard_response {
+      margin-top: 30px; }
+      .case .postcard_response_pic {
+        max-width: 100%;
+        float: left;
+        padding-right: 25px;
+        margin-top: 5px; }
+      .case .postcard_response_text {
+        margin-bottom: 4px; }
+      .case .postcard_response_name {
+        color: #cc0000; }
+
+.sliderarrows {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  margin-left: -42px; }
+  .sliderarrows .l {
+    float: left; }
+  .sliderarrows .r {
+    margin-left: 45px; }
+
+a {
+  display: block; }
+  a:hover .arrow {
+    border: 1px solid red; }
+  a:hover .liner {
+    background-color: red; }
+  a:hover .linel {
+    background-color: red; }
+  a:hover .arrow_left:after {
+    background-color: red; }
+  a:hover .arrow_left:before {
+    background-color: red; }
+  a:hover .arrow_right:after {
+    background-color: red; }
+  a:hover .arrow_right:before {
+    background-color: red; }
+
+.arrow {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border: 1px solid black;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px; }
+  .arrow_left:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    top: 14px;
+    left: 11px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .arrow_left:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    top: 22px;
+    left: 11px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg); }
+  .arrow .linel {
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    top: 18px;
+    left: 12px; }
+  .arrow_right:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    top: 14px;
+    left: 17px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg); }
+  .arrow_right:before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 1px;
+    background-color: black;
+    top: 22px;
+    left: 17px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg); }
+  .arrow .liner {
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background-color: black;
+    top: 18px;
+    left: 12px; }
+
+.city {
+  background-image: url("../images/cityfon.jpg"); }
+  .city img {
+    max-width: 100%; }
+
+.input {
+  background-image: url("../images/sofaroom.jpg");
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .input_bg {
+    background-color: rgba(0, 0, 0, 0.6); }
+  .input_header {
+    text-transform: uppercase;
+    color: white;
+    font-size: 61px;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 85px; }
+  .input_subheader {
+    color: white;
+    font-size: 61px;
+    text-align: center; }
+  .input_form input {
+    margin-top: 15px;
+    height: 37px;
+    outline: none;
+    border: none; }
+  .input_form:focus {
+    outline: none;
+    border: 1px solid red; }
+  .input_form a {
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 19px;
+    background-color: red;
+    padding: 14px 26px;
+    display: inline-block;
+    border: none;
+    margin-bottom: 50px; }
